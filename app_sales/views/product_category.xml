@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Form view -->
+    <record id="app_sales_product_category_form_view" model="ir.ui.view">
+        <field name="name">app_sales.product.category.view.form</field>
+        <field name="model">app_sales.product.category</field>
+        <field name="arch" type="xml">
+            <form>
+                <div class="oe_button_box" name="button_box">
+                    <button 
+                        name="action_open_product_ids" 
+                        type="object"
+                        class="oe_stat_button"
+                        icon="fa-list"
+                    >
+                        <div class="o_stat_info">
+                            <span class="o_stat_value">
+                                <field name="product_count"/>
+                            </span>
+                            <span class="o_stat_text">
+                                Products
+                            </span>
+                        </div>
+                    </button>
+
+                </div>
+
+                <div class="o_group o_group_col_6">
+                    <div class="oe_title mw-75 ps-0 pe-2">
+                        <h1>
+                            <field name="name" placeholder="e.g. Thể thao"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="description"/>
+                        <field name="parent_id"/>
+                    </group>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Actions -->
+    <record id="app_sales_product_category_actions" model="ir.actions.act_window">
+        <field name="name">Product category</field>
+        <field name="res_model">app_sales.product.category</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+</odoo>
+
+

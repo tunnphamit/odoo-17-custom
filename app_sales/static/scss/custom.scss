@@ -1,0 +1,15 @@
+
+.thumbnail-small img{
+    width: 120px !important;
+    height: 120px !important;
+    object-fit: cover;
+}
+
+// primary color: #1e3769 - rgb(30, 55, 105);
+.bg-100 {
+    background-color: #B0DAFF !important;
+}
+.card-body {
+    border-radius: 6px !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+}

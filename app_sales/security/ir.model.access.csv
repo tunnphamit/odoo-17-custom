@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_app_sales_product_user,access.app_sales.product.user,model_app_sales_product,base.group_user,1,1,1,1
+access_app_sales_product_manager,access.app_sales.product.manager,model_app_sales_product,base.group_system,1,1,1,1
+access_app_sales_category_user,access.app_sales.category.user,model_app_sales_product_category,base.group_user,1,1,1,1
+access_app_sales_category_manager,access.app_sales.category.manager,model_app_sales_product_category,base.group_system,1,1,1,1

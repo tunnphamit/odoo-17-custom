@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem 
+        id="menu_app_sales_root" 
+        name="App Sales" 
+        sequence="1"/>
+
+    <!-- Product -->
+    <menuitem 
+        id="menu_app_sales_product" 
+        name="Products" 
+        parent="menu_app_sales_root" 
+        action="app_sales_product_actions" 
+        sequence="10"/>
+
+    <!-- Config -->
+    <menuitem 
+        id="menu_app_sales_configuration" 
+        name="Configuration" 
+        parent="menu_app_sales_root" 
+        sequence="20"/>
+    
+    <menuitem 
+        id="menu_app_sales_category" 
+        name="Category" 
+        parent="menu_app_sales_configuration" 
+        action="app_sales_product_category_actions"
+        sequence="10"/>
+</odoo>
