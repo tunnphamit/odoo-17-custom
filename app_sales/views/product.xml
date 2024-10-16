@@ -47,6 +47,12 @@
                                     </form>
                                 </field>
                             </page>
+
+                            <page string="Purchase">
+                                <group>
+                                    <field name="purchase_price"/>
+                                </group>
+                            </page>
                         </notebook>
 
                     </div>
