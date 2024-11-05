@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem 
+        id="eaut_crm_menu_root" 
+        name="EAUT CRM" 
+        sequence="1"/>
+
+    <!-- Admission applications -->
+    <menuitem 
+        id="admission_application_menu_main" 
+        name="Xét tuyển" 
+        parent="eaut_crm_menu_root" 
+        sequence="10"/>
+    <menuitem 
+        id="admission_application_admission_application" 
+        name="Hồ sơ xét tuyển" 
+        parent="admission_application_menu_main" 
+        action="admission_application_action" 
+        sequence="3"/>
+    <menuitem 
+        id="admission_application_admission_major" 
+        name="Ngành xét tuyển" 
+        parent="admission_application_menu_main" 
+        action="admission_major_action" 
+        sequence="4"/>
+    <menuitem 
+        id="admission_application_admission_group" 
+        name="Tổ hợp xét tuyển" 
+        parent="admission_application_menu_main" 
+        action="admission_group_action" 
+        sequence="5"/>
+    <menuitem 
+        id="admission_state_settings" 
+        name="Trạng thái xét duyệt" 
+        parent="admission_application_menu_main" 
+        action="admission_state_action" 
+        sequence="6"/>
+
+    <!-- Plugins menu -->
+    <menuitem 
+        id="eaut_crm_plugins" 
+        name="Tích hợp" 
+        parent="eaut_crm_menu_root" 
+        sequence="20"/>
+    <menuitem 
+        id="eaut_crm_plugin_switchboard" 
+        name="Tổng đài" 
+        parent="eaut_crm_plugins"
+        action="crm_plugin_switchboard_action"
+        sequence="21"/>
+    
+    <!-- Setinga menu -->
+    <menuitem 
+        id="admission_application_settings" 
+        name="Thiết lập" 
+        parent="eaut_crm_menu_root" 
+        sequence="30"/>
+
+</odoo>
